@@ -65,8 +65,7 @@ private:
   uvc_device_handle_t *devh_;
   uvc_frame_t *rgb_frame_;
 
-  image_transport::ImageTransport it_;
-  image_transport::CameraPublisher cam_pub_;
+  ros::Publisher cam_pub_;
 
   dynamic_reconfigure::Server<UVCCameraConfig> config_server_;
   UVCCameraConfig config_;
